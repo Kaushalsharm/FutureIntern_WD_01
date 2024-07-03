@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("img1.jpg");
+    background-size: cover;
+    font-family: "poppins", sans-serif;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; 
+}
+h1{
+    
+    position: relative;
+    margin-bottom: 507px;
+    box-shadow: 10px 5px 30px rgb(255, 68, 0) ;
+}
+h1:hover{
+    background-color: rgb(200, 222, 135);
+    color:rgb(255, 68, 0);
+    font-size: 35px;
+}
+.container{
+    height: 457px;
+    width: 462px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: fixed;
+}
+
+input{
+    height: 103px;
+    width: 444px;
+    margin: 7px;
+    font-size: 63px;
+    border-radius: 13px;
+    background: transparent;
+}
+.button-container{
+    height: 300px;
+   background: transparent;
+    margin: 4px 0 4px 0;
+}
+.papa{
+    height: 60px;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 253);
+    border-radius: 50%;
+    margin: 5px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+}
+.button:hover{
+    background-color: rgb(205, 205, 202);
+    font-size: 25px;
+    cursor: pointer;
+}
+.button1{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(220, 220, 219);
+    border-radius: 50%;
+    margin: 5px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px rgb(72, 255, 0), -1em 0 .4em rgb(255, 187, 0);
+}
+.button1:hover{
+    background-color: rgb(248, 248, 246);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+/* Media queries for responsive design */
+
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 22px;
+        height: 0px;
+        box-shadow: 10px 5px 30px rgb(255, 68, 0) ;
+    }
+    /* Adjusting styles for tablets and smaller screens */
+    .container {
+        width: 90%; /* Make container width 90% of the viewport width */
+        max-width: 400px; /* Limit maximum width for smaller screens */
+    }
+
+    input {
+        font-size: 2.5rem; /* Adjusted font size */
+        width: 382px;
+    }
+
+    .button,
+    .button1 {
+        height: 50px;
+        width: 50px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjusting styles for mobile phones */
+
+    h1 {
+        font-size: 14px;
+        margin-top: 5px;
+        box-shadow: 10px 5px 30px rgb(255, 68, 0) ;
+    }
+
+    .container {
+        width: 90%; /* Make container width 90% of the viewport width */
+        max-width: 320px; /* Limit maximum width for smaller screens */
+        box-shadow: none; /* Remove box shadow */
+        padding: 0px 6px 0px 4px;
+    }
+
+    input {
+        font-size: 2rem; /* Adjusted font size */
+        height: 80px; /* Adjusted input height */
+        width: calc(100% - 20px); /* Adjusted width considering padding */
+        padding: 0 10px; /* Added padding for better spacing */
+        margin: 10px 0; /* Added margin for spacing */
+    }
+
+    .button,
+    .button1 {
+        height: 30px; /* Adjusted button height */
+        width: 30px; /* Adjusted button width */
+        font-size: 1rem; /* Adjusted font size */
+    }
+}
